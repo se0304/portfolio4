@@ -1,0 +1,155 @@
+@charset 'utf-8';
+
+@mixin liacolor {
+    color: #fff;
+}
+
+@mixin fontfamliy {
+    font-family: '맑은 고딕', 'Malgun Gothic', Helvetica, AppleSDGothicNeo, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+header {
+    width: 100%;
+    height: 194px;
+    background: url(../img/headerbackground.png);
+    background-repeat: repeat-x left top;
+    border-bottom: 1px solid #0080ff;
+    display: flex;
+    justify-content: center;
+
+    .logo {
+        width: 265px;
+        height: 103px;
+        position: relative;
+        top: 0;
+        left: 0;
+        position: absolute;
+        top: 4.2%;
+        left: 18.8%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .bottomli-l {
+        position: absolute;
+        width: 620px;
+        height: 40px;
+        top: 15.6%;
+        left: 18.8%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            @include fontfamliy();
+            align-items: center;
+            margin-top: 12px;
+
+            li a {
+                color: #0080ff;
+                font-weight: bold;
+                font-size: 13px;
+            }
+
+
+
+            li span {
+                color: #ccc;
+            }
+
+
+        }
+
+
+    }
+
+    .bottomli-r {
+        position: absolute;
+        width: 350px;
+        height: 40px;
+        top: 15.6%;
+        right: 18.8%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            @include fontfamliy();
+            margin-top: 12px;
+
+            li a {
+                color: #666666;
+                font-weight: lighter;
+                font-size: 13px;
+            }
+        }
+
+    }
+}
+
+.headertop {
+    width: 1200px;
+    height: 191px;
+    display: flex;
+    justify-content: space-between;
+
+    .headertop-l {
+        ul {
+            width: 582px;
+            height: 38px;
+            background-color: #0080ff;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            @include fontfamliy();
+            font-weight: bold;
+
+            li a {
+                @include liacolor();
+                font-size: 14px;
+            }
+        }
+
+    }
+
+    .headertop-r {
+
+        ul {
+            width: 280px;
+            height: 32px;
+            margin-top: 2px;
+            display: flex;
+            justify-content: space-between;
+            font-family: '돋움', Dotum, Helvetica, AppleSDGothicNeo, sans-serif;
+            align-items: center;
+
+            li a {
+                @include liacolor();
+                font-size: 11px;
+
+            }
+        }
+
+    }
+}
+
+footer{width: 100%; height: 337px; background-color: #dfdfdf; border-top: solid 1px #cbcbcb;
+    .footerline{
+        width: 100%; height: 43px; background-color: #dfdfdf; border-bottom: 1px solid #cbcbcb;
+        .ulli{
+            width: 960px; height: 43px; margin: 0 auto; background-color: #0080ff; 
+            ul {display: flex; justify-content: space-between; align-items: center;}
+            li {margin-top: 10px;}
+            a {font-family: '맑은 고딕','Malgun Gothic','Apple SD Gothic Neo',AppleGothic,'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif; font-size: 10px;}
+        }
+    }
+}
+
+.section{width: 1200px; height: 500px; background-color: red; margin: 0 auto;}
+
+
+// .bottomli-l ul li:first-of-type(1) {width: 100px; height: 100px; background-color: #0080ff;}
+// .libox{width: 80px; height: 42px; position: absolute; background-color: #0080ff; top: 15.7%; left: 18.7%;}
