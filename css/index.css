@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  background-color: #f8f8f8;
+}
+
 header {
   width: 100%;
   height: 194px;
@@ -7,6 +11,108 @@ header {
   border-bottom: 1px solid #0080ff;
   display: flex;
   justify-content: center;
+}
+header .headertop {
+  width: 1200px;
+  height: 191px;
+  display: flex;
+  justify-content: space-between;
+}
+header .headertop .headertop-l ul {
+  width: 582px;
+  height: 38px;
+  background-color: #0080ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "맑은 고딕", "Malgun Gothic", Helvetica, AppleSDGothicNeo, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-weight: bold;
+}
+header .headertop .headertop-l ul li a {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: -1px;
+}
+header .headertop .headertop-r ul {
+  width: 280px;
+  height: 32px;
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "돋움", Dotum, Helvetica, AppleSDGothicNeo, sans-serif;
+  align-items: center;
+}
+header .headertop .headertop-r ul li a {
+  color: #fff;
+  font-size: 11px;
+}
+header .headerbottom h2 {
+  width: 110px;
+  height: 43px;
+  background-color: #0080ff;
+  position: absolute;
+  top: 15.6%;
+  left: 18.5%;
+  font-size: 13px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  text-align: center;
+}
+header .headerbottom h2 a {
+  position: relative;
+  top: 12px;
+  color: white;
+}
+header .headerbottom ul {
+  display: flex;
+  position: absolute;
+  top: 16.9%;
+  left: 24.7%;
+  font-size: 13px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  text-align: center;
+}
+header .headerbottom ul li a {
+  color: #0080ff;
+  margin: 0px 5px;
+  font-weight: bold;
+}
+header .headerbottom h5 {
+  position: absolute;
+  top: 16.9%;
+  left: 38.6%;
+  font-size: 11px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  text-align: center;
+  color: #ccc;
+}
+header .headerbottom .ultwo {
+  display: flex;
+  position: absolute;
+  top: 16.9%;
+  left: 39.1%;
+  font-size: 13px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  text-align: center;
+}
+header .headerbottom .ultwo li a {
+  color: #000;
+  margin: 0px 5px;
+}
+header .headerbottom .ulthree {
+  display: flex;
+  position: absolute;
+  top: 16.9%;
+  left: 62.2%;
+  font-size: 13px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  text-align: center;
+}
+header .headerbottom .ulthree li a {
+  color: #666;
+  font-weight: lighter;
+  margin: 0px 5px;
 }
 header .logo {
   width: 265px;
@@ -19,86 +125,47 @@ header .logo {
   left: 18.8%;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
-header .bottomli-l {
+header .search {
+  width: 505px;
+  height: 48px;
   position: absolute;
-  width: 620px;
-  height: 40px;
-  top: 15.6%;
-  left: 18.8%;
+  top: 7.2%;
+  left: 33%;
+  border: 2px solid #0080ff;
+  border-radius: 3px;
+  overflow: hidden;
 }
-header .bottomli-l ul {
-  display: flex;
-  justify-content: space-between;
-  font-family: "맑은 고딕", "Malgun Gothic", Helvetica, AppleSDGothicNeo, sans-serif;
-  font-size: 14px;
+header .search input {
+  width: 430px;
+  height: 48px;
+  border: none;
+  margin: 0 0 0 17px;
+  font-size: 18px;
+  color: #000;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
   font-weight: bold;
-  align-items: center;
-  margin-top: 12px;
 }
-header .bottomli-l ul li a {
-  color: #0080ff;
-  font-weight: bold;
-  font-size: 13px;
+header .search input:focus {
+  outline: none;
 }
-header .bottomli-l ul li span {
-  color: #ccc;
-}
-header .bottomli-r {
+header .search button {
+  width: 60px;
+  height: 48px;
+  background: url(https://image.yes24.com/sysimage/renew/gnb/gnbN4.png?ver=161201b);
+  background-repeat: no-repeat 0px 0px;
+  border: none;
   position: absolute;
-  width: 350px;
-  height: 40px;
-  top: 15.6%;
-  right: 18.8%;
+  cursor: pointer;
 }
-header .bottomli-r ul {
-  display: flex;
-  justify-content: space-between;
-  font-family: "맑은 고딕", "Malgun Gothic", Helvetica, AppleSDGothicNeo, sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  margin-top: 12px;
-}
-header .bottomli-r ul li a {
-  color: #666666;
-  font-weight: lighter;
-  font-size: 13px;
-}
-
-.headertop {
-  width: 1200px;
-  height: 191px;
-  display: flex;
-  justify-content: space-between;
-}
-.headertop .headertop-l ul {
-  width: 582px;
-  height: 38px;
-  background-color: #0080ff;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-family: "맑은 고딕", "Malgun Gothic", Helvetica, AppleSDGothicNeo, sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  font-weight: bold;
-}
-.headertop .headertop-l ul li a {
-  color: #fff;
-  font-size: 14px;
-}
-.headertop .headertop-r ul {
-  width: 280px;
-  height: 32px;
-  margin-top: 2px;
-  display: flex;
-  justify-content: space-between;
-  font-family: "돋움", Dotum, Helvetica, AppleSDGothicNeo, sans-serif;
-  align-items: center;
-}
-.headertop .headertop-r ul li a {
-  color: #fff;
-  font-size: 11px;
+header .headerslide {
+  width: 180px;
+  height: 112px;
+  background-color: red;
+  position: absolute;
+  top: 3.9%;
+  right: 18.7%;
 }
 
 footer {
@@ -132,9 +199,287 @@ footer .footerline .ulli a {
   font-size: 10px;
 }
 
-.section {
+.contentwrap {
   width: 1200px;
-  height: 500px;
-  background-color: red;
+  height: 4310px;
+  background-color: #f8f8f8;
   margin: 0 auto;
+  position: relative;
+  top: 15%;
+}
+.contentwrap .section-1 {
+  position: relative;
+  width: 1200px;
+  height: 423px;
+  background-color: #f8f8f8;
+  border: 1px solid #d8d8d8;
+  top: 0.4%;
+  overflow: hidden;
+}
+.contentwrap .section-1 .textbox {
+  width: 130px;
+  height: 422px;
+  background-color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 9%;
+  z-index: 1;
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+}
+.contentwrap .section-1 .textbox ul {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 2px;
+  margin: 0 15px;
+}
+.contentwrap .section-1 .textbox ul a {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #666;
+}
+.contentwrap .section-1 .textbox ul span {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #ccc;
+}
+.contentwrap .section-1 .leftsidebar {
+  width: 109px;
+  height: 422px;
+  background-color: rgb(255, 255, 255);
+  border-right: 1px solid #d8d8d8;
+  text-align: left;
+}
+.contentwrap .section-1 .leftsidebar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  top: 2%;
+}
+.contentwrap .section-1 .leftsidebar a {
+  color: #000;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  margin: 0px 15px;
+}
+.contentwrap .section-1 .leftsidebar li {
+  line-height: 40px;
+}
+.contentwrap .section-1 .leftsidebar li:hover {
+  width: 109px;
+  height: 40px;
+  background-color: #0080ff;
+  position: relative;
+}
+.contentwrap .section-1 .leftsidebar li:hover a {
+  color: #fff;
+}
+.contentwrap .section-1 .imgbannerslide {
+  width: 1090px;
+  height: 425px;
+  position: absolute;
+  top: 0;
+  left: 9.2%;
+  overflow: hidden;
+}
+.contentwrap .section-1 .imgbannerslide .slidewrap span {
+  position: absolute;
+  top: 45%;
+  display: block;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 30px;
+  color: #fff;
+  line-height: 30px;
+  background: rgba(51, 51, 51, 0.4);
+  cursor: pointer;
+  height: 50px;
+  transform: translateY(-50%);
+  text-align: center;
+  display: none;
+}
+.contentwrap .section-1 .imgbannerslide .slidewrap span:hover {
+  background-color: #333;
+  color: #fff;
+}
+.contentwrap .section-1 .imgbannerslide .slidewrap .prev {
+  left: 0;
+  width: 34px;
+  height: 38px;
+  text-align: center;
+  letter-spacing: 6px;
+  background-image: url(/img/icon.png);
+}
+.contentwrap .section-1 .imgbannerslide .slidewrap .next {
+  right: 0;
+  width: 34px;
+  height: 38px;
+  letter-spacing: -5px;
+  background-image: url(/img/icon.png);
+  rotate: -180deg;
+  position: absolute;
+  top: 36%;
+}
+.contentwrap .section-1 .imgbannerslide .slidewrap .slide {
+  width: 4360px;
+}
+.contentwrap .section-1 .imgbannerslide .slidewrap .slide li {
+  width: 1090px;
+  height: 425px;
+  float: left;
+}
+.contentwrap .section-1 .imgbannerslide .slidewrap .slide li img {
+  width: 100%;
+  height: 100%;
+}
+.contentwrap .section-1 .imgbannerslide .bottom-hover {
+  display: flex;
+  position: absolute;
+  top: 90%;
+  text-align: center;
+}
+.contentwrap .section-1 .imgbannerslide .bottom-hover .hover-1.active {
+  background-color: #333;
+}
+.contentwrap .section-1 .imgbannerslide .bottom-hover .hover-1.active a {
+  color: #fff;
+}
+.contentwrap .section-1 .imgbannerslide .bottom-hover .hover-1 {
+  width: 272px;
+  height: 40px;
+  background-color: #f8f8f8;
+  margin: 0px 1px;
+  position: relative;
+  left: -0.1%;
+}
+.contentwrap .section-1 .imgbannerslide .bottom-hover .hover-1 h2 a {
+  font-size: 12px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  color: #666;
+  text-align: center;
+}
+.contentwrap .section-2 {
+  position: relative;
+  width: 1200px;
+  height: 389px;
+  background-color: #f8f8f8;
+  top: 0.9%;
+  border: 1px solid #d8d8d8;
+}
+.contentwrap .section-2 :nth-child(2) {
+  width: 238px;
+  height: 119px;
+}
+.contentwrap .section-2 .l-book {
+  width: 238px;
+  height: 269px;
+  border-right: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentwrap .section-2 .l-book h2 a {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 20px;
+  position: absolute;
+  top: 0%;
+  color: #000;
+}
+.contentwrap .section-2 .l-book .imgslide {
+  width: 200px;
+  height: 153px;
+  background-color: red;
+  overflow: hidden;
+}
+.contentwrap .section-2 .l-book .imgslide ul li img {
+  width: 101%;
+  height: 101%;
+}
+.contentwrap .section-2 .lbook {
+  width: 238px;
+  height: 119px;
+  border-right: 1px solid #d8d8d8;
+}
+.contentwrap .section-3 {
+  position: relative;
+  width: 1200px;
+  height: 385px;
+  background-color: #f8f8f8;
+  top: 1.4%;
+  border: 1px solid #d8d8d8;
+}
+.contentwrap .section-4 {
+  position: relative;
+  width: 1200px;
+  height: 371px;
+  background-color: #f8f8f8;
+  top: 6.8%;
+  border: 1px solid #d8d8d8;
+}
+.contentwrap .section-5 {
+  position: relative;
+  width: 1200px;
+  height: 691px;
+  background-color: #f8f8f8;
+  top: 7.3%;
+  border: 1px solid #d8d8d8;
+}
+.contentwrap .section-6 {
+  position: relative;
+  width: 1200px;
+  height: 501px;
+  background-color: #f8f8f8;
+  border: 1px solid #d8d8d8;
+  top: 7.8%;
+}
+.contentwrap .section-7 {
+  position: relative;
+  width: 1200px;
+  height: 613px;
+  background-color: #f8f8f8;
+  border: 1px solid #d8d8d8;
+  top: 8.3%;
+}
+.contentwrap .bottombanner {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: red;
+  top: 8.7%;
+}
+.contentwrap .section-8 {
+  position: relative;
+  width: 1200px;
+  height: 240px;
+  background-color: #f8f8f8;
+  border: 1px solid #d8d8d8;
+  top: 9.12%;
+}
+.contentwrap .bottombanner-2 {
+  position: relative;
+  width: 1200px;
+  height: 80px;
+  background-color: #f8f8f8;
+  top: 9.5%;
+}
+.contentwrap .bottombanner-3 {
+  position: relative;
+  width: 1200px;
+  height: 80px;
+  background-color: #f8f8f8;
+  border: 1px solid #d8d8d8;
+  top: 9.5%;
+}
+
+.section-banner {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-color: #646464;
+  top: 152.6%;
 }
