@@ -71,13 +71,13 @@
         
         });
 
-        $(".bannerslide").mouseover(function(){
-            $(".bottombanner > span ").css("display", "block");
-    
-            $(".bottombanner > span").mouseout(function(){
-                $(".bottombanner > .p").css("display", "none");
-            });
+        $(".bottombanner").mouseover(function(){
+            $(".bottombanner > span ").show();
+            $(".bottombanner").mouseleave(function(){
+                $(".bottombanner>span").hide();
+            });     
         });
+
 
 
 
@@ -130,5 +130,111 @@
             $(".book2").eq(i).append("<h5>"+msg.documents[0].publisher+"</h5>");
             $(".book2").eq(i).append("<h5>"+msg.documents[0].authors[0]+"</h5>");
             $(".book2").eq(i).append("<h4>"+msg.documents[0].sale_price+"원 </h4>");
+        });
+};
+
+var crema;
+crema = ["안젤리크"]
+$.ajax({
+    method: "GET",
+    url: "https://dapi.kakao.com/v3/search/book?target=title",
+    data: {query:crema},
+    headers: { Authorization: "KakaoAK f49ddabcd0f54008dff8bf9b020f1ced" }
+})
+
+    .done(function(msg){
+        console.log(msg)
+
+        $(".crema").append("<img src='" + msg.documents[0].thumbnail + "'/>");
+        $(".crema").append("<h4>"+msg.documents[0].title+"</h4>");
+    });
+
+    //section 8 book1
+    
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"나의 멋진 경주"},
+        headers: { Authorization: "KakaoAK f49ddabcd0f54008dff8bf9b020f1ced" }
+    })
+    
+        .done(function(msg){
+            console.log(msg)
+    
+            $(".book8:nth-of-type(1)").append("<img src='" + msg.documents[0].thumbnail + "'/>");s
+        });
+
+        //2
+
+        $.ajax({
+            method: "GET",
+            url: "https://dapi.kakao.com/v3/search/book?target=title",
+            data: {query:"나의 이상하고 평범한 부동산 가족"},
+            headers: { Authorization: "KakaoAK f49ddabcd0f54008dff8bf9b020f1ced" }
+        })
+        
+            .done(function(msg){
+                console.log(msg)
+        
+                $(".book8:nth-of-type(2)").append("<img src='" + msg.documents[0].thumbnail + "'/>");s
+            });
+
+    //섹션7 책정보
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:"요즘 저는 아버지께 책을 읽어 드립니다"},
+        headers: { Authorization: "KakaoAK f49ddabcd0f54008dff8bf9b020f1ced" }
+    })
+    
+        .done(function(msg){
+            console.log(msg)
+    
+            $(".book7").append("<img src='" + msg.documents[0].thumbnail + "'/>");
+            $(".book7").append("<h5>"+msg.documents[0].title+"</h5>");
+            $(".book7").append("<h6>"+msg.documents[0].authors[0]+" 저 | 두란노"+"</h6>");
+        });
+
+// 섹션 6 책정보
+
+var book6;
+    book6 = ["구의 증명", "아가미", "아몬드", "파과", "천개의 파랑"]
+    for(let i=0; i<book6.length; i++){
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:book6[i]},
+        async:false,
+        headers: { Authorization: "KakaoAK f49ddabcd0f54008dff8bf9b020f1ced" }
+    })
+
+        .done(function(msg){
+            console.log(msg)
+
+            $(".book6").eq(i).append("<img src='" + msg.documents[0].thumbnail + "'/>" );
+            $(".book6").eq(i).append("<h5>"+msg.documents[0].title+"</h5>");
+            $(".book6").eq(i).append("<h5>"+msg.documents[0].authors[0]+"</h5>");
+        });
+};
+
+//2
+
+var book6_1;
+    book6_1 = ["구의 증명", "아가미", "아몬드", "파과", "천개의 파랑"]
+    for(let i=0; i<book6_1.length; i++){
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:book6_1[i]},
+        async:false,
+        headers: { Authorization: "KakaoAK f49ddabcd0f54008dff8bf9b020f1ced" }
+    })
+
+        .done(function(msg){
+            console.log(msg)
+
+            $(".book6").eq(i).append("<img src='" + msg.documents[0].thumbnail + "'/>" );
+            $(".book6-1").eq(i).append("<h5>"+msg.documents[0].title+"</h5>");
+            $(".book6-1").eq(i).append("<h5>"+msg.documents[0].authors[0]+"</h5>");
         });
 };
