@@ -828,6 +828,99 @@ footer .footerline .footer-4 span a:hover {
   top: 8.3%;
   overflow: hidden;
 }
+.contentwrap .section-7 h3 {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 16px;
+  white-space: nowrap;
+  position: relative;
+}
+.contentwrap .section-7 h3 a {
+  color: #333;
+  position: relative;
+  top: 20px;
+  left: 37%;
+  z-index: 2;
+}
+.contentwrap .section-7 .h3-2 {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 16px;
+  white-space: nowrap;
+  position: relative;
+}
+.contentwrap .section-7 .h3-2 a {
+  color: #333;
+  position: relative;
+  top: 310px;
+  left: 37%;
+  z-index: 2;
+}
+.contentwrap .section-7 .box2 {
+  width: 780px;
+  height: 306px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentwrap .section-7 .box2 .boxwrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contentwrap .section-7 .box2 .boxwrap .booksix {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+.contentwrap .section-7 .box2 .boxwrap .booksix img {
+  width: 100px;
+  height: 150px;
+  border: 1px solid #c1c1c1;
+}
+.contentwrap .section-7 .box2 .boxwrap h3 {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 16px;
+  white-space: nowrap;
+  position: relative;
+}
+.contentwrap .section-7 .box2 .boxwrap h3 a {
+  color: #333;
+  position: relative;
+  top: -7%;
+  left: 60%;
+}
+.contentwrap .section-7 .box {
+  width: 780px;
+  height: 306px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #d8d8d8;
+}
+.contentwrap .section-7 .box .boxwrap {
+  display: flex;
+}
+.contentwrap .section-7 .box .boxwrap .book6 {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+.contentwrap .section-7 .box .boxwrap .book6 img {
+  width: 120px;
+  height: 150px;
+  border: 1px solid #c1c1c1;
+}
 .contentwrap .section-7 .section7 {
   width: 419px;
   height: 615px;
@@ -835,6 +928,8 @@ footer .footerline .footer-4 span a:hover {
   display: flex;
   justify-content: center;
   overflow: hidden;
+  position: relative;
+  top: -6%;
 }
 .contentwrap .section-7 .section7 span {
   font-size: 13px;
@@ -845,8 +940,8 @@ footer .footerline .footer-4 span a:hover {
 .contentwrap .section-7 .section7 h3 {
   font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
   position: absolute;
-  top: 4%;
-  left: 2%;
+  top: 0%;
+  left: -4%;
   font-size: 17px;
 }
 .contentwrap .section-7 .section7 h3 a {
@@ -896,53 +991,6 @@ footer .footerline .footer-4 span a:hover {
 }
 .contentwrap .section-7 .section7 .book7-2 ul li img {
   width: 100%;
-}
-.contentwrap .section-7 .section7 .box {
-  width: 780px;
-  height: 306px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contentwrap .section-7 .section7 .box .boxwrap {
-  display: flex;
-}
-.contentwrap .section-7 .section7 .box .boxwrap .book6 {
-  margin: 0 10px;
-  position: relative;
-  top: 15px;
-  text-align: center;
-  line-height: 20px;
-  cursor: pointer;
-}
-.contentwrap .section-7 .section7 .box .boxwrap h5 {
-  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
-  font-size: 14px;
-  color: #333;
-  cursor: pointer;
-}
-.contentwrap .section-7 .section7 .box .boxwrap-2 {
-  display: flex;
-}
-.contentwrap .section-7 .section7 .box .boxwrap-2 .book6 {
-  margin: 0 10px;
-  position: relative;
-  top: 15px;
-  text-align: center;
-  line-height: 20px;
-  cursor: pointer;
-}
-.contentwrap .section-7 .section7 .box2 {
-  width: 780px;
-  height: 307px;
-  background-color: #969696;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  border-top: 1px solid #c1c1c1;
 }
 .contentwrap .bottombanner {
   position: relative;

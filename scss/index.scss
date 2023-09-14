@@ -1009,6 +1009,66 @@ footer {
         top: 8.3%;
         overflow: hidden;
 
+        h3 {@include font(); font-size: 16px; white-space: nowrap; position: relative;
+            a{color: #333; position: relative; top: 20px; left: 37%; z-index: 2;}
+
+        }
+
+        .h3-2{@include font(); font-size: 16px; white-space: nowrap; position: relative;
+            a{color: #333; position: relative; top: 310px; left: 37%; z-index: 2;}
+
+        }
+
+        
+
+        .box2{
+            width: 780px;
+            height: 306px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .boxwrap{display: flex; align-items: center; justify-content: center;
+                .booksix{margin: 0 10px; position: relative; top: 15px; text-align: center; line-height: 20px; cursor: pointer;
+                    img {width: 100px; height: 150px; border: 1px solid #c1c1c1;}
+                }
+                h3 {@include font(); font-size: 16px; white-space: nowrap; position: relative;
+                    a{color: #333; position: relative; top: -7%; left: 60%;}
+                }
+            }
+        }
+
+        .box {
+            width: 780px;
+            height: 306px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #d8d8d8;
+
+        
+
+            .boxwrap{display: flex;
+
+                .book6 {margin: 0 10px; position: relative; top: 15px; text-align: center; line-height: 20px; cursor: pointer;
+                    img{width: 120px; height: 150px; border: 1px solid #c1c1c1}
+                    
+                }
+                
+                
+               
+            }
+
+            
+            
+        }
+
         .section7 {
             width: 419px;
             height: 615px;
@@ -1016,6 +1076,8 @@ footer {
             display: flex;
             justify-content: center;
             overflow: hidden;
+            position: relative;
+            top: -6%;
 
             span {
                 font-size: 13px;
@@ -1027,8 +1089,8 @@ footer {
             h3 {
                 @include font();
                 position: absolute;
-                top: 4%;
-                left: 2%;
+                top: 0%;
+                left: -4%;
                 font-size: 17px;
 
                 a {
@@ -1088,42 +1150,7 @@ footer {
                 }
             }
 
-            .box {
-                width: 780px;
-                height: 306px;
-                position: absolute;
-                top: 0;
-                right: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                .boxwrap{display: flex;
-
-                    .book6 {margin: 0 10px; position: relative; top: 15px; text-align: center; line-height: 20px; cursor: pointer;}
-                    h5{@include font(); font-size: 14px; color: #333; cursor: pointer;}
-                    
-                    
-                   
-                }
-
-                .boxwrap-2{
-                    display: flex;
-
-                    .book6{margin: 0 10px; position: relative; top: 15px; text-align: center; line-height: 20px; cursor: pointer;}
-                }
-                
-            }
-
-            .box2 {
-                width: 780px;
-                height: 307px;
-                background-color: #969696;
-                position: absolute;
-                top: 50%;
-                right: 0;
-                border-top: 1px solid #c1c1c1;
-            }
+            
         }
     }
 
@@ -1451,3 +1478,4 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
