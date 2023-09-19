@@ -195,7 +195,7 @@ $.ajax({
             $(".book7").append("<h6>"+msg.documents[0].authors[0]+" 저 | 두란노"+"</h6>");
         });
 
-// 섹션 6 책정보
+// 섹션 7-2 책정보
 
 var book6;
     book6 = ["구의 증명", "아가미", "아몬드", "파과", "천개의 파랑"]
@@ -217,15 +217,15 @@ var book6;
         });
 };
 
-//2
+// 2
 
-var book6_1;
-    book6_1 = ["구의 증명", "아가미", "아몬드", "파과", "천개의 파랑"]
-    for(let i=0; i<book6_1.length; i++){
+var booksix;
+    booksix = ["그리하여흘려쓴것들","사람을사랑해도될까","불온하고불완전한편지","캣콜링","서랍에저녁을넣어두었다"]
+    for(let i=0; i<booksix.length; i++){
     $.ajax({
         method: "GET",
         url: "https://dapi.kakao.com/v3/search/book?target=title",
-        data: {query:book6_1[i]},
+        data: {query:booksix[i]},
         async:false,
         headers: { Authorization: "KakaoAK f49ddabcd0f54008dff8bf9b020f1ced" }
     })
@@ -233,8 +233,67 @@ var book6_1;
         .done(function(msg){
             console.log(msg)
 
-            $(".book6").eq(i).append("<img src='" + msg.documents[0].thumbnail + "'/>" );
-            $(".book6-1").eq(i).append("<h5>"+msg.documents[0].title+"</h5>");
-            $(".book6-1").eq(i).append("<h5>"+msg.documents[0].authors[0]+"</h5>");
+            $(".booksix").eq(i).append("<img src='" + msg.documents[0].thumbnail + "'/>" );
+            $(".booksix").eq(i).append("<h5>"+msg.documents[0].title+"</h5>");
+            $(".booksix").eq(i).append("<h5>"+msg.documents[0].authors[0]+"</h5>");
+        });
+};
+
+//섹션2 책정보
+
+$.ajax({
+    method: "GET",
+    url: "https://dapi.kakao.com/v3/search/book?target=title",
+    data: {query:"소녀 동지여 적을 쏴라"},
+    headers: { Authorization: "KakaoAK f49ddabcd0f54008dff8bf9b020f1ced" }
+})
+
+    .done(function(msg){
+        console.log(msg)
+
+        $(".boxsection2book").append("<img src='" + msg.documents[0].thumbnail + "'/>");
+    });
+
+
+//섹션5 책정보
+
+
+var bookfive;
+    bookfive = ["윤성현","파리의 심리학 카페","도대체 해외여행이 뭐라고"]
+    for(let i=0; i<booksix.length; i++){
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:bookfive[i]},
+        async:false,
+        headers: { Authorization: "KakaoAK f49ddabcd0f54008dff8bf9b020f1ced" }
+    })
+
+        .done(function(msg){
+            console.log(msg)
+
+            $(".sectionbook").eq(i).append("<img src='" + msg.documents[0].thumbnail + "'/>");
+            $(".sectionbook").eq(i).append("<h5>"+msg.documents[0].title+"</h5>");
+            $(".sectionbook").eq(i).append("<h6>"+msg.documents[0].authors[0]+"</h6>");
+            $(".sectionbook").eq(i).append("<h6>"+msg.documents[0].sale_price+"원 </h6>");
+        });
+};
+
+var sectionbooktwo;
+sectionbooktwo = ["살롱 드 경성","이중섭, 편지화","어디서 무엇이 되어 다시 만나랴", "살아남은 그림들"]
+    for(let i=0; i<sectionbooktwo.length; i++){
+    $.ajax({
+        method: "GET",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query:sectionbooktwo[i]},
+        async:false,
+        headers: { Authorization: "KakaoAK f49ddabcd0f54008dff8bf9b020f1ced" }
+    })
+
+        .done(function(msg){
+            console.log(msg)
+
+            $(".sectionbooktwo").eq(i).append("<img src='" + msg.documents[0].thumbnail + "'/>");
+            $(".sectionbooktwo").eq(i).append("<h6>"+msg.documents[0].title+"</h6>");
         });
 };

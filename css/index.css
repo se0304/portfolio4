@@ -331,7 +331,7 @@ footer .footerline .footer-4 span a:hover {
 
 .contentwrap {
   width: 1200px;
-  height: 4310px;
+  height: 3900px;
   background-color: #f8f8f8;
   margin: 0 auto;
   position: relative;
@@ -559,10 +559,80 @@ footer .footerline .footer-4 span a:hover {
 .contentwrap .section-2 .section2book {
   width: 720px;
   height: 400px;
-  background-color: red;
+  background-color: #fff;
   position: absolute;
   top: 0;
   left: 20%;
+}
+.contentwrap .section-2 .section2book .section2textbox {
+  position: absolute;
+  top: 6%;
+  right: 20%;
+}
+.contentwrap .section-2 .section2book .section2textbox a {
+  color: #333;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.contentwrap .section-2 .section2book .section2textbox p {
+  color: #6699cc;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 16px;
+  width: 250px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.contentwrap .section-2 .section2book .section2textbox p:nth-of-type(2) {
+  color: #999;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+.contentwrap .section-2 .section2book .section2textbox p:hover {
+  text-decoration: underline;
+}
+.contentwrap .section-2 .section2book .section2textbox p:nth-of-type(2):hover {
+  text-decoration: none;
+}
+.contentwrap .section-2 .section2book .section2textbox h5 {
+  color: #333;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+}
+.contentwrap .section-2 .section2book .section2textbox h5:hover {
+  text-decoration: underline;
+}
+.contentwrap .section-2 .section2book .section2textbox h6 {
+  color: #999;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.contentwrap .section-2 .section2book .section2textbox h5:nth-of-type(2) {
+  color: #333;
+}
+.contentwrap .section-2 .section2book .section2textbox h5:nth-of-type(2) span {
+  color: #333;
+  font-size: 12px;
+}
+.contentwrap .section-2 .section2book .section2textbox h5:nth-of-type(2):hover {
+  text-decoration: none;
+}
+.contentwrap .section-2 .section2book .section2slide {
+  position: relative;
+}
+.contentwrap .section-2 .section2book .section2slide .boxsection2book {
+  width: 220px;
+  height: 320px;
+  background-color: #0080ff;
+  position: absolute;
+  top: 20px;
+  left: 13%;
+  overflow: hidden;
+}
+.contentwrap .section-2 .section2book .section2slide .boxsection2book img {
+  width: 220px;
+  height: 320px;
 }
 .contentwrap .section-2 .section2book .bar {
   position: absolute;
@@ -689,7 +759,7 @@ footer .footerline .footer-4 span a:hover {
   width: 1200px;
   height: 371px;
   background-color: #fff;
-  top: 6.8%;
+  top: 9.8%;
   border: 1px solid #d8d8d8;
   border-left: 1px solid #d8d8d8;
   border-right: 1px solid #d8d8d8;
@@ -799,22 +869,169 @@ footer .footerline .footer-4 span a:hover {
   width: 1200px;
   height: 691px;
   background-color: #f8f8f8;
-  top: 7.3%;
+  top: 10.3%;
   border: 1px solid #d8d8d8;
   border-left: 1px solid #d8d8d8;
   border-right: 1px solid #d8d8d8;
   border-bottom: 1px solid #d8d8d8;
+  overflow: hidden;
 }
-.contentwrap .section-6 {
-  position: relative;
-  width: 1200px;
-  height: 501px;
-  background-color: #f8f8f8;
+.contentwrap .section-5 h4 {
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  z-index: 3;
+}
+.contentwrap .section-5 h4 a {
+  color: #333;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.contentwrap .section-5 .box {
+  width: 1198px;
+  height: 428px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentwrap .section-5 .box .sectionbook {
+  width: 362px;
+  height: 341px;
+  border: none;
+  border-bottom: none;
+}
+.contentwrap .section-5 .box .sectionbook img {
+  width: 150px;
+  height: 200px;
   border: 1px solid #d8d8d8;
-  border-left: 1px solid #d8d8d8;
+}
+.contentwrap .section-5 .box .sectionbook h5 {
+  position: absolute;
+  top: 85%;
+  color: #333;
+  cursor: pointer;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.contentwrap .section-5 .box .sectionbook h5:hover {
+  text-decoration: underline;
+}
+.contentwrap .section-5 .box .sectionbook h6 {
+  position: absolute;
+  top: 91%;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #999;
+}
+.contentwrap .section-5 .box .sectionbook h6:nth-of-type(2) {
+  position: absolute;
+  top: 96%;
+  color: #333;
+}
+.contentwrap .section-5 .box2 {
+  width: 1198px;
+  height: 198px;
+  background-color: #fff;
+  border-top: 1px solid #d8d8d8;
+  overflow: hidden;
+  position: relative;
+}
+.contentwrap .section-5 .box2 h3 {
+  position: absolute;
+  top: 25%;
+  left: 3%;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  color: #333;
+  font-size: 16px;
+}
+.contentwrap .section-5 .box2 h3:hover {
+  text-decoration: underline;
+}
+.contentwrap .section-5 .box2 h5:hover {
+  text-decoration: underline;
+}
+.contentwrap .section-5 .box2 h5 {
+  position: absolute;
+  top: 45%;
+  left: 3%;
+  font-weight: normal;
+  color: #999;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.contentwrap .section-5 .box2 .box2list {
+  width: 600px;
+  height: 198px;
+  position: absolute;
+  right: 0;
+}
+.contentwrap .section-5 .box2 .box2list .sectionbooktwo {
+  border: none;
+  background-color: transparent;
+  width: 150px;
+  height: 198px;
+}
+.contentwrap .section-5 .box2 .box2list .sectionbooktwo img {
+  width: 80.72px;
+  height: 120px;
+  border: 1px solid #d8d8d8;
+}
+.contentwrap .section-5 .box2 .box2list .sectionbooktwo h6 {
+  position: absolute;
+  font-size: 10px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  top: 85%;
+  color: #333;
+  font-weight: normal;
+}
+.contentwrap .section-5 ul {
+  display: flex;
+  justify-content: center;
+}
+.contentwrap .section-5 ul li {
+  position: relative;
+  width: 150px;
+  height: 62px;
+  background-color: #fff;
+  text-align: center;
   border-right: 1px solid #d8d8d8;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contentwrap .section-5 ul li a {
+  position: absolute;
+  top: 70%;
+  color: #333;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.contentwrap .section-5 ul .sectionlist:nth-of-type(8) {
+  border-right: none;
+}
+.contentwrap .section-5 ul .sectionlist:nth-child(n+2):nth-child(-n+8) {
   border-bottom: 1px solid #d8d8d8;
-  top: 7.8%;
+  background-color: #f8f8f8;
+}
+.contentwrap .section-5 .section-5icon {
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 5;
+}
+.contentwrap .section-5 .section-5icon div {
+  display: flex;
+}
+.contentwrap .section-5 .section-5icon div img {
+  width: 50px;
+  height: 40px;
+  margin: 0 50px;
 }
 .contentwrap .section-7 {
   position: relative;
@@ -825,8 +1042,101 @@ footer .footerline .footer-4 span a:hover {
   border-left: 1px solid #d8d8d8;
   border-right: 1px solid #d8d8d8;
   border-bottom: 1px solid #d8d8d8;
-  top: 8.3%;
+  top: 10.8%;
   overflow: hidden;
+}
+.contentwrap .section-7 h3 {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 16px;
+  white-space: nowrap;
+  position: relative;
+}
+.contentwrap .section-7 h3 a {
+  color: #333;
+  position: relative;
+  top: 20px;
+  left: 37%;
+  z-index: 2;
+}
+.contentwrap .section-7 .h3-2 {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 16px;
+  white-space: nowrap;
+  position: relative;
+}
+.contentwrap .section-7 .h3-2 a {
+  color: #333;
+  position: relative;
+  top: 310px;
+  left: 37%;
+  z-index: 2;
+}
+.contentwrap .section-7 .box2 {
+  width: 780px;
+  height: 306px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentwrap .section-7 .box2 .boxwrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contentwrap .section-7 .box2 .boxwrap .booksix {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+.contentwrap .section-7 .box2 .boxwrap .booksix img {
+  width: 100px;
+  height: 150px;
+  border: 1px solid #c1c1c1;
+}
+.contentwrap .section-7 .box2 .boxwrap h3 {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 16px;
+  white-space: nowrap;
+  position: relative;
+}
+.contentwrap .section-7 .box2 .boxwrap h3 a {
+  color: #333;
+  position: relative;
+  top: -7%;
+  left: 60%;
+}
+.contentwrap .section-7 .box {
+  width: 780px;
+  height: 306px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #d8d8d8;
+}
+.contentwrap .section-7 .box .boxwrap {
+  display: flex;
+}
+.contentwrap .section-7 .box .boxwrap .book6 {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+.contentwrap .section-7 .box .boxwrap .book6 img {
+  width: 120px;
+  height: 150px;
+  border: 1px solid #c1c1c1;
 }
 .contentwrap .section-7 .section7 {
   width: 419px;
@@ -835,6 +1145,8 @@ footer .footerline .footer-4 span a:hover {
   display: flex;
   justify-content: center;
   overflow: hidden;
+  position: relative;
+  top: -6%;
 }
 .contentwrap .section-7 .section7 span {
   font-size: 13px;
@@ -845,8 +1157,8 @@ footer .footerline .footer-4 span a:hover {
 .contentwrap .section-7 .section7 h3 {
   font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
   position: absolute;
-  top: 4%;
-  left: 2%;
+  top: 0%;
+  left: -4%;
   font-size: 17px;
 }
 .contentwrap .section-7 .section7 h3 a {
@@ -897,59 +1209,12 @@ footer .footerline .footer-4 span a:hover {
 .contentwrap .section-7 .section7 .book7-2 ul li img {
   width: 100%;
 }
-.contentwrap .section-7 .section7 .box {
-  width: 780px;
-  height: 306px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contentwrap .section-7 .section7 .box .boxwrap {
-  display: flex;
-}
-.contentwrap .section-7 .section7 .box .boxwrap .book6 {
-  margin: 0 10px;
-  position: relative;
-  top: 15px;
-  text-align: center;
-  line-height: 20px;
-  cursor: pointer;
-}
-.contentwrap .section-7 .section7 .box .boxwrap h5 {
-  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
-  font-size: 14px;
-  color: #333;
-  cursor: pointer;
-}
-.contentwrap .section-7 .section7 .box .boxwrap-2 {
-  display: flex;
-}
-.contentwrap .section-7 .section7 .box .boxwrap-2 .book6 {
-  margin: 0 10px;
-  position: relative;
-  top: 15px;
-  text-align: center;
-  line-height: 20px;
-  cursor: pointer;
-}
-.contentwrap .section-7 .section7 .box2 {
-  width: 780px;
-  height: 307px;
-  background-color: #969696;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  border-top: 1px solid #c1c1c1;
-}
 .contentwrap .bottombanner {
   position: relative;
   width: 1200px;
   height: 75px;
   background-color: red;
-  top: 8.7%;
+  top: 11.3%;
   overflow: hidden;
 }
 .contentwrap .bottombanner .p {
@@ -997,7 +1262,7 @@ footer .footerline .footer-4 span a:hover {
   border-left: 1px solid #d8d8d8;
   border-right: 1px solid #d8d8d8;
   border-bottom: 1px solid #d8d8d8;
-  top: 9.12%;
+  top: 11.9%;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -1138,7 +1403,7 @@ footer .footerline .footer-4 span a:hover {
   width: 1200px;
   height: 80px;
   background-color: #f8f8f8;
-  top: 9.5%;
+  top: 12.3%;
   display: flex;
   align-items: center;
 }
@@ -1181,7 +1446,7 @@ footer .footerline .footer-4 span a:hover {
   border-left: 1px solid #d8d8d8;
   border-right: 1px solid #d8d8d8;
   border-bottom: 1px solid #d8d8d8;
-  top: 9.5%;
+  top: 12.5%;
   overflow: hidden;
   display: flex;
 }
@@ -1212,7 +1477,7 @@ footer .footerline .footer-4 span a:hover {
   width: 100%;
   height: 200px;
   background-color: #646464;
-  top: 152.6%;
+  top: 157%;
   background: url(/img/bannerimg.jpg);
   background-repeat: no-repeat;
   background-size: contain;
