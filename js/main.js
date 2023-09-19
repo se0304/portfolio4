@@ -236,7 +236,6 @@ var booksix;
             $(".booksix").eq(i).append("<img src='" + msg.documents[0].thumbnail + "'/>" );
             $(".booksix").eq(i).append("<h5>"+msg.documents[0].title+"</h5>");
             $(".booksix").eq(i).append("<h5>"+msg.documents[0].authors[0]+"</h5>");
-<<<<<<< HEAD
         });
 };
 
@@ -296,7 +295,5 @@ sectionbooktwo = ["살롱 드 경성","이중섭, 편지화","어디서 무엇�
 
             $(".sectionbooktwo").eq(i).append("<img src='" + msg.documents[0].thumbnail + "'/>");
             $(".sectionbooktwo").eq(i).append("<h6>"+msg.documents[0].title+"</h6>");
-=======
->>>>>>> 6959256c57c7830b98133ef15cb529bf98301728
         });
 };
