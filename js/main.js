@@ -297,3 +297,16 @@ sectionbooktwo = ["살롱 드 경성","이중섭, 편지화","어디서 무엇�
             $(".sectionbooktwo").eq(i).append("<h6>"+msg.documents[0].title+"</h6>");
         });
 };
+
+$.ajax({
+    method: "GET",
+    url: "https://dapi.kakao.com/v3/search/book?target=title",
+    data: {query:"박문각 공인중개사"},
+    headers: { Authorization: "KakaoAK f49ddabcd0f54008dff8bf9b020f1ced" }
+})
+
+    .done(function(msg){
+        console.log(msg)
+
+        $(".headerbox").append("<img src='" + msg.documents[0].thumbnail + "'/>");
+    });
