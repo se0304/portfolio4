@@ -298,6 +298,7 @@ sectionbooktwo = ["살롱 드 경성","이중섭, 편지화","어디서 무엇�
         });
 };
 
+//
 $.ajax({
     method: "GET",
     url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -310,3 +311,6 @@ $.ajax({
 
         $(".headerbox").append("<img src='" + msg.documents[0].thumbnail + "'/>");
     });
+
+//sub api
+
