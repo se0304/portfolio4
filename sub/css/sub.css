@@ -1,0 +1,1856 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 194px;
+  background: url(../img/headerbackground.png);
+  background-repeat: repeat-x;
+  border-bottom: 1px solid #0080ff;
+  display: flex;
+  justify-content: center;
+}
+header .headertop {
+  width: 1200px;
+  height: 191px;
+  display: flex;
+  justify-content: space-between;
+}
+header .headertop .headertop-l ul {
+  width: 582px;
+  height: 38px;
+  background-color: #0080ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "맑은 고딕", "Malgun Gothic", Helvetica, AppleSDGothicNeo, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-weight: bold;
+}
+header .headertop .headertop-l ul li a {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: -1px;
+}
+header .headertop .headertop-r ul {
+  width: 280px;
+  height: 32px;
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "돋움", Dotum, Helvetica, AppleSDGothicNeo, sans-serif;
+  align-items: center;
+}
+header .headertop .headertop-r ul li a {
+  color: #fff;
+  font-size: 11px;
+}
+header .headerbottom h2 {
+  width: 110px;
+  height: 43px;
+  background-color: #0080ff;
+  position: absolute;
+  top: 15.6%;
+  left: 18.5%;
+  font-size: 13px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  text-align: center;
+}
+header .headerbottom h2 a {
+  position: relative;
+  top: 12px;
+  color: white;
+}
+header .headerbottom ul {
+  display: flex;
+  position: absolute;
+  top: 16.9%;
+  left: 24.7%;
+  font-size: 13px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  text-align: center;
+}
+header .headerbottom ul li a {
+  color: #0080ff;
+  margin: 0px 5px;
+  font-weight: bold;
+}
+header .headerbottom h5 {
+  position: absolute;
+  top: 16.9%;
+  left: 38.6%;
+  font-size: 11px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  text-align: center;
+  color: #ccc;
+}
+header .headerbottom .ultwo {
+  display: flex;
+  position: absolute;
+  top: 16.9%;
+  left: 39.1%;
+  font-size: 13px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  text-align: center;
+}
+header .headerbottom .ultwo li a {
+  color: #000;
+  margin: 0px 5px;
+}
+header .headerbottom .ulthree {
+  display: flex;
+  position: absolute;
+  top: 16.9%;
+  left: 62.2%;
+  font-size: 13px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  text-align: center;
+}
+header .headerbottom .ulthree li a {
+  color: #666;
+  font-weight: lighter;
+  margin: 0px 5px;
+}
+header .logo {
+  width: 265px;
+  height: 103px;
+  position: relative;
+  top: 0;
+  left: 0;
+  position: absolute;
+  top: 4.2%;
+  left: 18.8%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+header .logo a {
+  width: 265px;
+  height: 103px;
+  position: relative;
+  top: 0;
+  left: 0;
+  position: absolute;
+  top: 4.2%;
+  left: 18.8%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+header .search {
+  width: 505px;
+  height: 48px;
+  position: absolute;
+  top: 7.2%;
+  left: 33%;
+  border: 2px solid #0080ff;
+  border-radius: 3px;
+  overflow: hidden;
+}
+header .search input {
+  width: 430px;
+  height: 48px;
+  border: none;
+  margin: 0 0 0 17px;
+  font-size: 18px;
+  color: #000;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-weight: bold;
+}
+header .search input:focus {
+  outline: none;
+}
+header .search button {
+  width: 60px;
+  height: 48px;
+  background: url(https://image.yes24.com/sysimage/renew/gnb/gnbN4.png?ver=161201b);
+  background-repeat: no-repeat;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+}
+header .headerslide {
+  width: 180px;
+  height: 112px;
+  position: absolute;
+  top: 3.9%;
+  right: 18.7%;
+  overflow: hidden;
+}
+header .headerslide span {
+  position: absolute;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #666;
+  font-weight: bold;
+  left: 40%;
+  top: 40%;
+}
+header .headerslide img {
+  width: 60px;
+  height: 85px;
+  position: absolute;
+  top: 10%;
+}
+
+footer {
+  width: 100%;
+  height: 337px;
+  background-color: #dfdfdf;
+  border-top: solid 1px #cbcbcb;
+  overflow: hidden;
+}
+footer .footerwrap {
+  width: 100%;
+  margin: 0 auto;
+  height: 43px;
+  align-items: center;
+  border-bottom: solid 1px #cbcbcb;
+}
+footer .footerwrap select {
+  width: 100px;
+  height: 24px;
+  font-size: 11px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #eaeaea;
+  border: 1px solid #c1c1c1;
+  background-color: #eaeaea;
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  position: absolute;
+  top: 23%;
+  right: 25.5%;
+  color: #666;
+  border-radius: 3px;
+}
+footer .footerwrap select:focus {
+  border: 1px solid #c1c1c1;
+  outline: none;
+}
+footer .ulli {
+  width: 960px;
+  height: 43px;
+  position: relative;
+  margin: 0 auto;
+}
+footer .ulli ul {
+  display: flex;
+}
+footer .ulli li {
+  margin-top: 10px;
+}
+footer .ulli li span {
+  font-size: 8px;
+  margin: 0 6px;
+}
+footer .ulli a {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #666;
+}
+footer .ulli a b {
+  color: #333;
+}
+footer .ulli a:hover {
+  text-decoration: underline;
+}
+footer .ulli:nth-of-type(2) {
+  width: 50px;
+  position: absolute;
+  top: -1%;
+  right: 27%;
+}
+footer .ulli:nth-of-type(2) ul li a img {
+  position: relative;
+  left: -132px;
+  margin: 0 -3px;
+}
+footer .footerline {
+  width: 100%;
+  height: 43px;
+  background-color: #dfdfdf;
+  position: relative;
+}
+footer .footerline .footer-2 {
+  width: 960px;
+  height: 148px;
+  margin: 0 auto;
+  position: relative;
+  top: 3%;
+}
+footer .footerline .footer-2 .footertexttwo {
+  position: absolute;
+  width: 400px;
+  position: absolute;
+  right: -10%;
+  top: 13%;
+}
+footer .footerline .footer-2 .footertexttwo .buttonbox {
+  position: absolute;
+  top: 75px;
+  left: -1px;
+}
+footer .footerline .footer-2 .footertexttwo h4 {
+  letter-spacing: 5px;
+}
+footer .footerline .footer-2 .footertexttwo ul {
+  display: flex;
+}
+footer .footerline .footer-2 .footertexttwo li {
+  color: #666;
+  line-height: 20px;
+  margin: 0 5px;
+  position: relative;
+  right: 1.3%;
+}
+footer .footerline .footer-2 .footertexttwo span {
+  font-size: 12px;
+  color: #333;
+  font-weight: bold;
+}
+footer .footerline .footer-2 .footertexttwo span:hover {
+  text-decoration: underline;
+}
+footer .footerline .footer-2 .footertexttwo button {
+  width: 88px;
+  height: 22px;
+  font-size: 11px;
+  color: #666;
+  background-color: #f8f8f8;
+  border-radius: 2px;
+  border: 1px solid #cacaca;
+  cursor: pointer;
+}
+footer .footerline .footer-2 .footertexttwo button:hover {
+  background-color: #d8d8d8;
+}
+footer .footerline .footer-2 .footertext {
+  width: 418px;
+  position: absolute;
+  top: 23px;
+  left: 158px;
+  line-height: 18px;
+}
+footer .footerline .footer-2 img {
+  position: absolute;
+  top: 5%;
+}
+footer .footerline .footer-2 h4 {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  color: #999;
+  position: relative;
+  top: -7px;
+  font-size: 14px;
+  font-weight: bold;
+}
+footer .footerline .footer-2 ul {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #999;
+}
+footer .footerline .footer-2 ul span a {
+  color: #666;
+  font-weight: bold;
+}
+footer .footerline .footer-2 a:hover {
+  text-decoration: underline;
+}
+footer .footerline .footer-3 {
+  width: 960px;
+  height: 88px;
+  margin: 0 auto;
+  position: relative;
+  top: 3%;
+  background: url(/img/footerlogo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+footer .footerline .footer-4 {
+  width: 960px;
+  height: 57px;
+  margin: 0 auto;
+  position: relative;
+  top: 3%;
+  display: flex;
+  align-items: center;
+}
+footer .footerline .footer-4 h6 {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #333;
+}
+footer .footerline .footer-4 p {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #666;
+  margin: 0 6px;
+}
+footer .footerline .footer-4 span a {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 11px;
+  position: absolute;
+  top: 36%;
+  right: 4%;
+  color: #666;
+  font-weight: bold;
+}
+footer .footerline .footer-4 span a:hover {
+  text-decoration: underline;
+}
+
+.headerbg {
+  width: 100%;
+  height: 58px;
+  background-color: #eee;
+}
+.headerbg .div-one {
+  width: 1200px;
+  height: 58px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerbg .div-one img {
+  width: 80%;
+}
+
+.headeroption {
+  width: 100%;
+  height: 41px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e5e5e5;
+}
+.headeroption .div-two {
+  width: 1200px;
+  height: 41px;
+  margin: 0 auto;
+}
+.headeroption .div-two ul {
+  width: 1200px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  letter-spacing: 2px;
+}
+.headeroption .div-two ul li:nth-of-type(3) span {
+  width: 10px;
+  height: 15px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  cursor: pointer;
+}
+.headeroption .div-two ul li:nth-of-type(5) span {
+  width: 10px;
+  height: 15px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  cursor: pointer;
+}
+.headeroption .div-two ul li:nth-of-type(7) span {
+  width: 10px;
+  height: 15px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  cursor: pointer;
+}
+.headeroption .div-two ul li:nth-of-type(9) span {
+  width: 10px;
+  height: 15px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  cursor: pointer;
+}
+.headeroption .div-two ul li span {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #333;
+}
+.headeroption .div-two ul li a {
+  color: #666;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headeroption .div-two ul li a button {
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  font-size: 10px;
+  background-color: #ebebeb;
+  border: 1px solid #d1d1d1;
+}
+
+.line {
+  width: 100%;
+  height: 60px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #333;
+  position: absolute;
+  top: 175%;
+  z-index: 1;
+  overflow: hidden;
+}
+.line .li {
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.line .li .price {
+  width: 280px;
+  height: 50px;
+  position: absolute;
+  right: 18.5%;
+  top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line .li .price h2 {
+  position: absolute;
+  left: 0;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  color: #ff6666;
+}
+.line .li .price h2 span {
+  font-size: 12px;
+}
+.line .li .price button {
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  margin: 0 3px;
+  background-color: #196ab3;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  position: relative;
+  left: 17%;
+  cursor: pointer;
+}
+.line .li .price button:nth-of-type(2) {
+  background-color: #199db3;
+}
+.line .li ul {
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  top: 1%;
+}
+.line .li ul li {
+  width: 170px;
+  height: 59px;
+  background-color: #333;
+}
+.line .li ul li:nth-of-type(2) {
+  background-color: #f8f8f8;
+  border-right: 1px solid #ebebeb;
+}
+.line .li ul li:nth-of-type(3) {
+  background-color: #f8f8f8;
+}
+.line .li ul li a .fristh4 {
+  color: #fff;
+}
+.line .li ul li a h4 {
+  text-align: center;
+  position: relative;
+  top: 28%;
+  color: #333;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+}
+
+.content {
+  width: 1200px;
+  height: 8000px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  position: relative;
+  top: 15%;
+  overflow: hidden;
+}
+.content .content-0 {
+  width: 1200px;
+  height: 820px;
+  position: relative;
+  top: 0.4%;
+}
+.content .content-0 .content-01 {
+  width: 400px;
+  height: 716.22px;
+  position: absolute;
+}
+.content .content-0 .content-01 .content-book {
+  width: 400px;
+  height: 583.22px;
+  background-color: red;
+}
+.content .content-0 .content-01 .content-book img {
+  width: 100%;
+  height: 100%;
+}
+.content .content-0 .content-01 div ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.content .content-0 .content-01 div ul button {
+  width: 96px;
+  height: 30px;
+  margin: 0 3px;
+  position: relative;
+  top: 30px;
+  border: solid 1px #ebebeb;
+  border-bottom-color: #d8d8d8;
+  border-right-color: #d8d8d8;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.content .content-0 .content-01 .div-2 {
+  width: 398px;
+  height: 51px;
+  border: solid 1px #ebebeb;
+  position: absolute;
+  top: 92.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .content-0 .content-01 .div-2 dt {
+  position: absolute;
+  left: 2%;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  top: 35%;
+}
+.content .content-0 .content-01 .div-2 dd ul {
+  display: flex;
+  justify-content: center;
+}
+.content .content-0 .content-01 .div-2 dd ul li em {
+  background: url(/sub/img/bgDetail.png);
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  left: 28%;
+  top: 30%;
+  background-size: cover;
+}
+.content .content-0 .content-01 .div-2 dd ul li a {
+  color: #666;
+  font-size: 12px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+}
+.content .content-0 .content-02 {
+  width: 760px;
+  height: 873.03px;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
+.content .content-0 .content-02 .content-002 {
+  width: 760px;
+  height: 141px;
+  position: absolute;
+  border-bottom: 1px solid #d8d8d8;
+  display: flex;
+  justify-content: flex-start;
+}
+.content .content-0 .content-02 .content-002 .boxone {
+  width: 500px;
+  height: 730px;
+  position: absolute;
+  top: 102%;
+}
+.content .content-0 .content-02 .content-002 .boxone .bottomend {
+  width: 500px;
+  height: 100px;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  position: absolute;
+  top: 55%;
+}
+.content .content-0 .content-02 .content-002 .boxone .bottomend ul li {
+  width: 165.83px;
+  height: 47px;
+  line-height: 16px;
+  border: 1px solid #d8d8d8;
+  margin: 0 1px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  position: relative;
+}
+.content .content-0 .content-02 .content-002 .boxone .bottomend ul li p {
+  color: #666;
+  position: absolute;
+  left: 5%;
+}
+.content .content-0 .content-02 .content-002 .boxone .bottomend ul li a {
+  color: #6699cc;
+  position: absolute;
+  line-height: 35px;
+}
+.content .content-0 .content-02 .content-002 .boxone .bottomend ul li em {
+  position: absolute;
+  right: 3%;
+  font-size: 12px;
+  font-style: normal;
+  cursor: pointer;
+}
+.content .content-0 .content-02 .content-002 .boxone .bottomend ul li span {
+  position: absolute;
+  top: 33%;
+  left: 9px;
+  width: 500px;
+}
+.content .content-0 .content-02 .content-002 .boxone .boxonebottom {
+  width: 500px;
+  height: 50px;
+  background-color: #edf5fe;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  position: absolute;
+  top: 46%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .content-0 .content-02 .content-002 .boxone .boxonebottom p {
+  width: 52px;
+  height: 17px;
+  text-align: center;
+  background-color: #222d87;
+  color: #fff;
+  border: 1px solid #222d87;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.content .content-0 .content-02 .content-002 .boxone .boxonebottom .ptwo {
+  position: absolute;
+  top: 15.5px;
+  left: -1%;
+  background-color: transparent;
+  border: none;
+  width: 500px;
+  color: #666;
+  letter-spacing: 1px;
+}
+.content .content-0 .content-02 .content-002 .boxone .boxonebottom .ptwo span {
+  font-weight: bold;
+}
+.content .content-0 .content-02 .content-002 .boxone .th-2 {
+  width: 500px;
+  height: 50px;
+  position: absolute;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  top: 30%;
+  border-bottom: 1px solid #d8d8d8;
+}
+.content .content-0 .content-02 .content-002 .boxone .th-2 table {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  font-size: 12px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  color: #666;
+}
+.content .content-0 .content-02 .content-002 .boxone .th-2 table th {
+  font-weight: normal;
+}
+.content .content-0 .content-02 .content-002 .boxone .th-3 {
+  width: 500px;
+  height: 40px;
+  position: absolute;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  top: 39%;
+  font-size: 12px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  color: #666;
+}
+.content .content-0 .content-02 .content-002 .boxone .th-3 table {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  font-size: 12px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  color: #666;
+}
+.content .content-0 .content-02 .content-002 .boxone .th-3 table th {
+  font-weight: normal;
+}
+.content .content-0 .content-02 .content-002 .boxone .th-3 table span a {
+  color: #6699cc;
+}
+.content .content-0 .content-02 .content-002 .boxone .th {
+  width: 500px;
+  height: 200px;
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+  position: absolute;
+  top: 1%;
+  left: 0;
+  margin: 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+.content .content-0 .content-02 .content-002 .boxone .th th {
+  font-size: 12px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-weight: normal;
+}
+.content .content-0 .content-02 .content-002 .boxone .th th h6 {
+  font-size: 12px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+}
+.content .content-0 .content-02 .content-002 .boxone .th td {
+  font-size: 12px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+}
+.content .content-0 .content-02 .content-002 .boxone .th td span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6666;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+}
+.content .content-0 .content-02 .content-002 .boxone .th td .spantwo {
+  font-size: 20px;
+  color: #000;
+}
+.content .content-0 .content-02 .content-002 .boxone div {
+  width: 95px;
+  height: 26px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 30px;
+  border: 1px solid #ff6666;
+  margin: 15px;
+}
+.content .content-0 .content-02 .content-002 .boxone div h5 {
+  width: 500px;
+  position: absolute;
+  top: 30%;
+  left: 110%;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  color: #ff6666;
+  font-weight: bold;
+}
+.content .content-0 .content-02 .content-002 .boxone div p {
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 12px;
+  position: absolute;
+  top: 21%;
+  left: 35%;
+  color: #ff6666;
+}
+.content .content-0 .content-02 .content-002 .boxone div div {
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  overflow: hidden;
+  border: none;
+  margin: 0;
+}
+.content .content-0 .content-02 .content-002 .boxone div div img {
+  width: 120%;
+  height: auto;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.content .content-0 .content-02 .content-002 .boxtwo {
+  width: 220px;
+  height: 574px;
+  background-color: #eee;
+  position: absolute;
+  top: 101.2%;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+.content .content-0 .content-02 .content-002 .boxtwo .boxthree {
+  width: 220px;
+  height: 100px;
+  position: absolute;
+  top: 40%;
+  border-bottom: none;
+}
+.content .content-0 .content-02 .content-002 .boxtwo .boxthree ul {
+  display: flex;
+  flex-direction: column;
+}
+.content .content-0 .content-02 .content-002 .boxtwo .boxthree ul li {
+  list-style: circle;
+  position: relative;
+  left: 20%;
+  top: -55px;
+  font-size: 13px;
+  color: #666;
+}
+.content .content-0 .content-02 .content-002 .boxtwo .boxthree button {
+  width: 180px;
+  height: 40px;
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #cfcfcf;
+  border-radius: 0;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #fff;
+}
+.content .content-0 .content-02 .content-002 .boxtwo .cart {
+  width: 180px;
+  height: 40px;
+  background-color: #196ab3;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 3px;
+  border: none;
+  position: absolute;
+  top: 18%;
+  font-weight: bold;
+}
+.content .content-0 .content-02 .content-002 .boxtwo .shop {
+  width: 180px;
+  height: 40px;
+  background-color: #199db3;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 3px;
+  border: none;
+  position: absolute;
+  top: 27%;
+  font-weight: bold;
+}
+.content .content-0 .content-02 .content-002 .boxtwo div {
+  width: 200px;
+  height: 205px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.content .content-0 .content-02 .content-002 .boxtwo div h5 {
+  margin: 20px;
+}
+.content .content-0 .content-02 .content-002 .boxtwo div dd input {
+  width: 61px;
+  height: 22px;
+  text-align: center;
+  border: none;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+.content .content-0 .content-02 .content-002 .boxtwo div dd button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #b1b1b1;
+  position: relative;
+  right: 75%;
+}
+.content .content-0 .content-02 .content-002 .boxtwo div dd button:nth-of-type(2) {
+  left: -30%;
+}
+.content .content-0 .content-02 .content-002 .boxtwo div dl {
+  display: flex;
+}
+.content .content-0 .content-02 .content-002 .boxtwo div dl dt {
+  font-size: 12px;
+  position: absolute;
+  top: 10.8%;
+  margin: 0 22px;
+}
+.content .content-0 .content-02 .content-002 .boxtwo div dl dd {
+  position: absolute;
+  left: 45%;
+}
+.content .content-0 .content-02 .content-002 .longbox {
+  width: 760px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  top: 65%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.content .content-0 .content-02 .content-002 .longbox ul {
+  letter-spacing: 1px;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  font-family: "Kopub Dotum";
+  font-size: 11.5px;
+}
+.content .content-0 .content-02 .content-002 .longbox span {
+  color: #0080ff;
+}
+.content .content-0 .content-02 .content-002 .longbox h4 {
+  position: absolute;
+  left: 11%;
+  top: 20%;
+  font-family: "KoPub Dotum";
+}
+.content .content-0 .content-02 .content-002 .longbox div {
+  width: 78px;
+  height: 16px;
+}
+.content .content-0 .content-02 .content-002 .longbox div img {
+  width: 100%;
+  height: auto;
+}
+.content .content-0 .content-02 .content-002 ul {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  font-family: "KoPub Dotum";
+  font-size: 12px;
+  color: #666;
+}
+.content .content-0 .content-02 .content-002 ul a {
+  font-family: "KoPub Dotum";
+  font-size: 12px;
+  color: #666;
+}
+.content .content-0 .content-02 .content-002 a:hover {
+  text-decoration: underline;
+}
+.content .content-0 .content-02 .content-002 h2 {
+  position: absolute;
+  top: 20%;
+  width: 222px;
+  height: 32px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #333;
+}
+.content .content-0 .content-02 .content-002 .textbox0 {
+  width: 52px;
+  height: 17px;
+  background-color: #fff;
+  position: relative;
+  margin: 0 2px;
+  top: 2%;
+  border: 1px solid #d8d8d8;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  font-size: 11px;
+  text-align: center;
+  color: #666;
+}
+.content .content-0 .content-1 {
+  width: 1200px;
+  height: 102px;
+  background-color: #425ca9;
+  position: absolute;
+  top: 25%;
+}
+.content .content-0 .content-2 {
+  width: 1200px;
+  height: 403px;
+  background-color: #666;
+  position: absolute;
+  top: 28.7%;
+}
+.content .content-1 {
+  width: 1198px;
+  height: 102px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+.content .content-1 .banner {
+  width: 980px;
+  height: 102px;
+  background-color: #000;
+  position: absolute;
+  overflow: hidden;
+}
+.content .content-1 .banner .bannerlist {
+  width: 227px;
+  height: 102px;
+  background-color: #b1b1b1;
+  position: absolute;
+}
+.content .content-1 .banner .bannerlist ul {
+  display: flex;
+  flex-direction: column;
+}
+.content .content-1 .banner .bannerlist ul li {
+  width: 227px;
+  height: 25px;
+  background-color: #eee;
+  border-bottom: 1px solid #ebebeb;
+  font-weight: bold;
+}
+.content .content-1 .banner .bannerlist ul li:nth-of-type(2) {
+  background-color: #fff;
+  font-weight: normal;
+}
+.content .content-1 .banner .bannerlist ul li:nth-of-type(3) {
+  background-color: #fff;
+  font-weight: normal;
+}
+.content .content-1 .banner .bannerlist ul li:nth-of-type(4) {
+  background-color: #fff;
+  font-weight: normal;
+}
+.content .content-1 .banner .bannerlist ul li a {
+  font-size: 12px;
+  margin: 0 5px;
+  color: #666;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+}
+.content .content-1 .banner .bannerimg {
+  width: 753px;
+  height: 102px;
+  background-color: #196ab3;
+  position: absolute;
+  right: 0;
+}
+.content .content-1 .banner .bannerimg ul li a img {
+  width: 102%;
+  position: absolute;
+}
+.content .content-1 .bannerend {
+  width: 227px;
+  height: 102px;
+  position: absolute;
+  right: 0;
+}
+.content .content-1 .bannerend .bannerendbox {
+  width: 90px;
+  height: 102px;
+  overflow: hidden;
+  margin: 0 5px;
+  position: absolute;
+}
+.content .content-1 .bannerend .bannerendbox img {
+  width: 100%;
+}
+.content .content-1 .bannerend .bannertextbox {
+  width: 227px;
+  height: 102px;
+  position: absolute;
+}
+.content .content-1 .bannerend .bannertextbox span {
+  color: #6699cc;
+  font-size: 12px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+.content .content-1 .bannerend .bannertextbox h4 {
+  color: #333;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  position: absolute;
+  top: 26%;
+  right: 2%;
+}
+.content .content-1 .bannerend .bannertextbox p {
+  color: #666;
+  font-size: 12px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  position: absolute;
+  top: 75%;
+  left: 46%;
+}
+.content .content-2 {
+  width: 1198px;
+  height: 352px;
+  border: 1px solid #d8d8d8;
+  position: absolute;
+  top: 12.4%;
+  overflow: hidden;
+}
+.content .content-2 ul {
+  width: 1200px;
+  height: 48px;
+  background-color: #333;
+  position: relative;
+  display: flex;
+}
+.content .content-2 ul li {
+  width: 600px;
+  height: 48px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .content-2 ul li h4 {
+  color: #333;
+}
+.content .content-2 ul li span {
+  color: #6699cc;
+  font-weight: bold;
+}
+.content .content-2 ul li:nth-of-type(2) {
+  background-color: #eee;
+  border-left: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  color: #333;
+}
+.content .content-2 .bookbox {
+  width: 1198px;
+  height: 352px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+}
+.content .content-2 .bookbox .bookbox-2 {
+  width: 187px;
+  height: 287px;
+  position: relative;
+  top: 2.5%;
+  margin: 0 5px;
+}
+.content .content-2 .bookbox .bookbox-2 img {
+  width: 125px;
+  height: 187px;
+  position: absolute;
+  top: 5%;
+  left: 18%;
+}
+.content .content-2 .bookbox .bookbox-2 h5,
+.content .content-2 .bookbox .bookbox-2 h4,
+.content .content-2 .bookbox .bookbox-2 h6 {
+  position: relative;
+  top: 77%;
+  text-align: center;
+  line-height: 20px;
+}
+.content .content-3 {
+  width: 1200px;
+  height: 1266px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  top: 7%;
+}
+.content .content-3 .contbox {
+  width: 220px;
+  height: 599px;
+  background-color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 0%;
+  z-index: 1;
+  border: 1px solid #d8d8d8;
+}
+.content .content-3 .contbox h3 {
+  width: 190px;
+  height: 44px;
+  font-size: 15px;
+  margin: 10px;
+  color: #333;
+}
+.content .content-3 .contbox h3 span {
+  color: #999;
+  font-size: 12px;
+  position: absolute;
+  top: 12px;
+  right: 2%;
+  font-weight: normal;
+}
+.content .content-3 .contbox div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content .content-3 .contbox div .contboxbook {
+  width: 210px;
+  height: 100px;
+}
+.content .content-3 .contbox div .contboxbook img {
+  width: 64px;
+  height: 94px;
+  position: relative;
+  left: -32%;
+  top: 19.5%;
+  border: 1px solid #b3b3b3;
+}
+.content .content-3 .contbox div .contboxbook p {
+  text-align: left;
+  font-size: 12px;
+  position: relative;
+  left: 23.5%;
+  width: 150px;
+  height: 200px;
+  top: -50%;
+  word-break: keep-all;
+}
+.content .content-3 .one {
+  width: 940px;
+  height: 211px;
+  position: relative;
+  top: 0%;
+}
+.content .content-3 .one table {
+  width: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.content .content-3 .one table caption {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  line-height: 60px;
+}
+.content .content-3 .one table caption a {
+  color: #333;
+}
+.content .content-3 .one table tbody {
+  width: 940px;
+  height: 176px;
+  position: absolute;
+  left: 0;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+.content .content-3 .one table tbody .last th {
+  border-bottom: none;
+}
+.content .content-3 .one table tbody .last td {
+  border-bottom: none;
+}
+.content .content-3 .one table tbody th {
+  width: 177px;
+  height: 41px;
+  background-color: #f8f8f8;
+  font-size: 13px;
+  position: relative;
+  top: 0px;
+  left: -2px;
+  border-bottom: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+}
+.content .content-3 .one table tbody td {
+  width: 770px;
+  height: 41px;
+  position: relative;
+  left: 0%;
+  font-size: 12px;
+  color: #666;
+  border-bottom: 1px solid #eee;
+}
+.content .content-3 .two {
+  width: 940px;
+  height: 240px;
+  position: relative;
+  top: 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d8d8d8;
+}
+.content .content-3 .two h3 {
+  font-size: 20px;
+  position: absolute;
+  top: 20%;
+}
+.content .content-3 .two ul {
+  display: flex;
+  position: absolute;
+  top: 50%;
+}
+.content .content-3 .two ul li a {
+  font-size: 12px;
+  color: #666;
+}
+.content .content-3 .two ul a:hover {
+  text-decoration: underline;
+}
+.content .content-3 .two ul:nth-of-type(2) {
+  position: absolute;
+  top: 75%;
+}
+.content .content-3 .two ul:nth-of-type(3) {
+  position: absolute;
+  top: 83%;
+}
+.content .content-3 .two h5 {
+  position: absolute;
+  top: 40%;
+}
+.content .content-3 .two h5:nth-last-of-type(2) {
+  position: absolute;
+  top: 65%;
+}
+.content .content-3 .three {
+  width: 940px;
+  height: 470px;
+  position: relative;
+  top: 0%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #d8d8d8;
+}
+.content .content-3 .three .threebox {
+  width: 940px;
+  height: 429px;
+}
+.content .content-3 .three .threebox .threebook {
+  width: 940px;
+  height: 291px;
+  position: absolute;
+  top: 28%;
+  display: flex;
+}
+.content .content-3 .three .threebox .threebook .box3 {
+  width: 200px;
+  height: 291px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.content .content-3 .three .threebox .threebook .box3 img {
+  position: absolute;
+  top: 10%;
+  border: 1px solid #d8d8d8;
+}
+.content .content-3 .three .threebox .threebook .box3 h4 {
+  position: absolute;
+  top: 88%;
+  line-height: 30px;
+}
+.content .content-3 .three .threebox .threebook .box3 h5 {
+  position: absolute;
+  top: 75%;
+}
+.content .content-3 .three .threebox .threebook .box3 h6 {
+  position: absolute;
+  top: 82%;
+}
+.content .content-3 .three .threebox h3 {
+  width: 940px;
+  height: 31px;
+  text-align: left;
+}
+.content .content-3 .three .threebox ul {
+  width: 940px;
+  height: 50px;
+  display: flex;
+  margin: 0 29px;
+  position: relative;
+  top: 6%;
+}
+.content .content-3 .three .threebox ul li {
+  width: 110px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #333;
+  margin: 0 2px;
+  text-align: center;
+  position: relative;
+  top: 10%;
+  border: 1px solid #333;
+}
+.content .content-3 .three .threebox ul li:nth-of-type(2) a {
+  color: #333;
+  background-color: #f8f8f8;
+}
+.content .content-3 .three .threebox ul li:nth-of-type(3) a {
+  color: #333;
+  background-color: #f8f8f8;
+}
+.content .content-3 .three .threebox ul li:nth-of-type(4) a {
+  color: #333;
+  background-color: #f8f8f8;
+}
+.content .content-3 .three .threebox ul li:nth-of-type(5) a {
+  color: #333;
+  background-color: #f8f8f8;
+}
+.content .content-3 .three .threebox ul li:nth-of-type(6) a {
+  color: #333;
+  background-color: #f8f8f8;
+}
+.content .content-3 .three .threebox ul li a {
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+  top: 10%;
+  color: #fff;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+}
+.content .content-3 .three .threebox ul li:nth-of-type(2) {
+  width: 75px;
+  height: 30px;
+  background-color: #f8f8f8;
+  border: 1px solid #d8d8d8;
+}
+.content .content-3 .three .threebox ul li:nth-of-type(3) {
+  width: 147px;
+  height: 30px;
+  background-color: #f8f8f8;
+  border: 1px solid #d8d8d8;
+}
+.content .content-3 .three .threebox ul li:nth-of-type(4) {
+  width: 99px;
+  height: 30px;
+  background-color: #f8f8f8;
+  border: 1px solid #d8d8d8;
+}
+.content .content-3 .three .threebox ul li:nth-of-type(5) {
+  width: 75px;
+  height: 30px;
+  background-color: #f8f8f8;
+  border: 1px solid #d8d8d8;
+}
+.content .content-3 .three .threebox ul li:nth-of-type(6) {
+  width: 75px;
+  height: 30px;
+  background-color: #f8f8f8;
+  border: 1px solid #d8d8d8;
+}
+.content .content-3 .four {
+  width: 940px;
+  height: 500px;
+  position: relative;
+  top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #d8d8d8;
+}
+.content .content-3 .four h3 {
+  width: 940px;
+  height: 46px;
+  position: absolute;
+  top: 0;
+  color: #333;
+  position: absolute;
+  top: 5%;
+}
+.content .content-3 .four .textfour {
+  width: 940px;
+  height: 417px;
+  position: absolute;
+  top: 18%;
+}
+.content .content-3 .four .textfour h4 {
+  color: #666;
+}
+.content .content-3 .four .textfour p {
+  font-size: 15px;
+  color: #666;
+}
+.content .content-3 .four .textfour span {
+  color: #6699cc;
+  font-size: 12px;
+}
+.content .content-3 .four .textfour button {
+  width: 54px;
+  height: 20px;
+  position: absolute;
+  left: 28%;
+  top: 84%;
+  font-size: 11px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+}
+.content .content-3 .five {
+  width: 940px;
+  height: 430px;
+  position: relative;
+  top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #d8d8d8;
+}
+.content .content-3 .five .textfive {
+  width: 940px;
+  height: 365px;
+}
+.content .content-3 .five .textfive h3 {
+  width: 940px;
+  height: 31px;
+  color: #333;
+  position: absolute;
+  top: 4%;
+}
+.content .content-3 .five .textfive p {
+  font-size: 15px;
+  color: #666;
+  letter-spacing: 1px;
+  line-height: 24px;
+  font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  position: relative;
+  top: 8%;
+}
+.content .content-3 .six {
+  width: 940px;
+  height: 2550px;
+  position: relative;
+  top: 0%;
+  overflow: hidden;
+  border-bottom: 1px solid #d8d8d8;
+}
+.content .content-3 .six h3 {
+  font-size: 20px;
+  color: #333;
+  position: relative;
+  top: 0.6%;
+}
+.content .content-3 .six .imgbox {
+  width: 940px;
+  height: 2480px;
+  background-color: #425ca9;
+  position: absolute;
+  top: 2.4%;
+}
+.content .content-3 .six .imgbox img {
+  width: 100%;
+  height: auto;
+}
+.content .content-3 .seven {
+  width: 940px;
+  height: 590px;
+  position: relative;
+  top: 0%;
+  border-bottom: 1px solid #d8d8d8;
+}
+.content .content-3 .seven .seventextbox {
+  width: 940px;
+  height: 114px;
+  position: relative;
+  top: 4%;
+}
+.content .content-3 .seven .seventextbox h3 {
+  font-size: 20px;
+  color: #333;
+}
+.content .content-3 .seven .seventextbox h3 span {
+  font-size: 15px;
+  font-weight: normal;
+  color: #666;
+}
+.content .content-3 .seven .seventextbox p {
+  font-size: 13px;
+  line-height: 0;
+  position: relative;
+  top: 10%;
+  color: #666;
+  top: 19%;
+}
+.content .content-3 .seven .seventextbox p button {
+  width: 167px;
+  height: 20px;
+  font-size: 11px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  position: absolute;
+  left: 46%;
+  top: -10px;
+  color: #333;
+}
+.content .content-3 .seven .livew {
+  width: 938px;
+  height: 442px;
+  background-color: #266b99;
+  position: relative;
+  top: 4%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #f8f8f8;
+  border: 1px solid #ebebeb;
+}
+.content .content-3 .seven .livew .text {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 5%;
+}
+.content .content-3 .seven .livew .text p {
+  font-size: 23px;
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.content .content-3 .seven .livew .text span {
+  color: #6699cc;
+}
+.content .content-3 .seven .livew .text .star2 {
+  width: 218px;
+  height: 38px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.content .content-3 .seven .livew .text .star2 img {
+  width: 100%;
+}
+.content .content-3 .seven .livew .text h2 {
+  font-size: 42px;
+  font-family: "Noto Sans KR", sans-serif;
+  position: absolute;
+  left: 54%;
+  top: 7.5%;
+}
+.content .content-3 .seven .livew .livewbox {
+  width: 430px;
+  height: 212px;
+  background-color: #0080ff;
+  position: relative;
+  top: 38%;
+  margin: 0 15px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .content-3 .seven .livew .livewbox h4 {
+  position: absolute;
+  top: 10%;
+}
+.content .content-3 .seven .livew .livewbox img {
+  position: absolute;
+  top: 25%;
+}
+.content .content-3 .eight {
+  width: 940px;
+  height: 500px;
+  position: relative;
+  top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .content-3 .eight h3 {
+  color: #333;
+  font-size: 20px;
+  width: 940px;
+  height: 31px;
+  position: absolute;
+  top: 3%;
+}
+.content .content-3 .eight .tb {
+  width: 940px;
+  height: 350px;
+}
+.content .content-3 .eight .tb table {
+  width: 940px;
+  height: 308px;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  border-collapse: collapse;
+}
+.content .content-3 .eight .tb table .tbs {
+  width: 940px;
+  height: 42px;
+  color: #6699cc;
+  font-weight: bold;
+  position: relative;
+  text-align: left;
+  font-size: 16px;
+}
+.content .content-3 .eight .tb table tr th {
+  font-size: 13px;
+  background-color: #f8f8f8;
+  width: 170px;
+  border-top: 1px solid #d8d8d8;
+  color: #333;
+}
+.content .content-3 .eight .tb table tr td {
+  width: 770px;
+  height: 67px;
+  border-bottom: 1px solid #d8d8d8;
+  font-size: 12px;
+  position: relative;
+  left: 1%;
+  color: #666;
+}
+.content .content-3 .eight .td {
+  width: 940px;
+  height: 800px;
+  position: absolute;
+  top: 100%;
+}
+.content .content-3 .eight table {
+  width: 940px;
+  height: 702px;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  border-collapse: collapse;
+}
+.content .content-3 .eight table caption {
+  text-align: left;
+  font-size: 16px;
+  color: #6699cc;
+  font-weight: bold;
+}
+.content .content-3 .eight table caption:nth-last-of-type(1) {
+  font-size: 13px;
+  color: #666;
+  line-height: 50px;
+}
+.content .content-3 .eight table tbody {
+  position: relative;
+  top: 2%;
+}
+.content .content-3 .eight table tbody tr {
+  position: relative;
+}
+.content .content-3 .eight table tbody tr th {
+  font-size: 13px;
+  background-color: #f8f8f8;
+  width: 170px;
+  border-top: 1px solid #d8d8d8;
+  color: #333;
+}
+.content .content-3 .eight table tbody tr td {
+  width: 770px;
+  height: 67px;
+  border-bottom: 1px solid #d8d8d8;
+  font-size: 12px;
+  position: relative;
+  left: 1%;
+  color: #666;
+}
