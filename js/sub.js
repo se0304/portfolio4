@@ -120,3 +120,15 @@ contbox = ["도시와 그 불확실한 벽","바다가 들리는 편의점","세
             $(".contboxbook").eq(i).append("<p>"+msg.documents[0].sale_price+"원 </p>");
         });
 };
+
+$(window).scroll(function(){
+    let ws = $(this).scrollTop();
+    console.log(ws)
+
+    let sticky = $('.content-3').offset().top;
+    if(ws > sticky){
+        $('.contbox').css({'position': 'fixed', 'right': '18.4%'});
+    }else {
+        $('.contbox').css({'position': 'absolute', 'right': '0'});
+    }
+})
