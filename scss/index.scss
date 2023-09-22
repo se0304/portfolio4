@@ -32,7 +32,7 @@ header {
     width: 100%;
     height: 194px;
     background: url(../img/headerbackground.png);
-    background-repeat: repeat-x left top;
+    background-repeat: repeat-x;
     border-bottom: 1px solid #0080ff;
     display: flex;
     justify-content: center;
@@ -177,6 +177,18 @@ header {
         justify-content: center;
         cursor: pointer;
 
+        a{ a{ width: 265px;
+            height: 103px;
+            position: relative;
+            top: 0;
+            left: 0;
+            position: absolute;
+            top: 4.2%;
+            left: 18.8%;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;}}
+
     }
 
     .search {
@@ -208,7 +220,7 @@ header {
             width: 60px;
             height: 48px;
             background: url(https://image.yes24.com/sysimage/renew/gnb/gnbN4.png?ver=161201b);
-            background-repeat: no-repeat 0px 0px;
+            background-repeat: no-repeat;
             border: none;
             position: absolute;
             cursor: pointer;
@@ -386,9 +398,9 @@ header {
                     height: 38px;
                     letter-spacing: -5px;
                     background-image: url(/img/icon.png);
-                    rotate: -180deg;
+                    transform: rotate(180deg);
                     position: absolute;
-                    top: 36%;
+                    top: 40%;
                 }
 
                 .slide {
@@ -570,16 +582,15 @@ header {
                 p:nth-of-type(2):hover{text-decoration: none;}
 
                 h5{color: #333; @include font(); font-size: 14px; line-height: 25px;
-                  
+                    
+                    &:nth-of-type(2) { span{color: #333; font-size: 12px;}}
                 }
 
                 h5:hover{text-decoration: underline;}
 
                 h6{color: #999; @include font(); font-size: 12px;}
 
-                h5:nth-of-type(2) {color: #333; 
-                    span{color: #333; font-size: 12px;}
-                }
+                
 
                 h5:nth-of-type(2):hover{text-decoration: none;}
 
@@ -890,6 +901,7 @@ header {
         top: 10.3%;
         @include border();
         overflow: hidden;
+        cursor: pointer;
 
         h4{position: absolute; top: 15%; left: 2%; z-index: 3;
             a{
@@ -1145,7 +1157,7 @@ header {
             height: 38px;
             letter-spacing: -5px;
             background-image: url(/img/icon.png);
-            rotate: -180deg;
+            transform: rotate(180deg);
             position: absolute;
             top: 17px;
             cursor: pointer;

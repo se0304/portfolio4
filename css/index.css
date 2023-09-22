@@ -16,7 +16,7 @@ header {
   width: 100%;
   height: 194px;
   background: url(../img/headerbackground.png);
-  background-repeat: repeat-x left top;
+  background-repeat: repeat-x;
   border-bottom: 1px solid #0080ff;
   display: flex;
   justify-content: center;
@@ -136,6 +136,19 @@ header .logo {
   justify-content: center;
   cursor: pointer;
 }
+header .logo a {
+  width: 265px;
+  height: 103px;
+  position: relative;
+  top: 0;
+  left: 0;
+  position: absolute;
+  top: 4.2%;
+  left: 18.8%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
 header .search {
   width: 505px;
   height: 48px;
@@ -163,7 +176,7 @@ header .search button {
   width: 60px;
   height: 48px;
   background: url(https://image.yes24.com/sysimage/renew/gnb/gnbN4.png?ver=161201b);
-  background-repeat: no-repeat 0px 0px;
+  background-repeat: no-repeat;
   border: none;
   position: absolute;
   cursor: pointer;
@@ -406,7 +419,7 @@ header {
   width: 100%;
   height: 194px;
   background: url(../img/headerbackground.png);
-  background-repeat: repeat-x left top;
+  background-repeat: repeat-x;
   border-bottom: 1px solid #0080ff;
   display: flex;
   justify-content: center;
@@ -526,6 +539,19 @@ header .logo {
   justify-content: center;
   cursor: pointer;
 }
+header .logo a a {
+  width: 265px;
+  height: 103px;
+  position: relative;
+  top: 0;
+  left: 0;
+  position: absolute;
+  top: 4.2%;
+  left: 18.8%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
 header .search {
   width: 505px;
   height: 48px;
@@ -553,7 +579,7 @@ header .search button {
   width: 60px;
   height: 48px;
   background: url(https://image.yes24.com/sysimage/renew/gnb/gnbN4.png?ver=161201b);
-  background-repeat: no-repeat 0px 0px;
+  background-repeat: no-repeat;
   border: none;
   position: absolute;
   cursor: pointer;
@@ -707,9 +733,9 @@ header .headerslide img {
   height: 38px;
   letter-spacing: -5px;
   background-image: url(/img/icon.png);
-  rotate: -180deg;
+  transform: rotate(180deg);
   position: absolute;
-  top: 36%;
+  top: 40%;
 }
 .contentwrap .section-1 .imgbannerslide .slidewrap .slide {
   width: 4360px;
@@ -923,19 +949,16 @@ header .headerslide img {
   font-size: 14px;
   line-height: 25px;
 }
+.contentwrap .section-2 .section2book .section2textbox h5:nth-of-type(2) span {
+  color: #333;
+  font-size: 12px;
+}
 .contentwrap .section-2 .section2book .section2textbox h5:hover {
   text-decoration: underline;
 }
 .contentwrap .section-2 .section2book .section2textbox h6 {
   color: #999;
   font-family: "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
-  font-size: 12px;
-}
-.contentwrap .section-2 .section2book .section2textbox h5:nth-of-type(2) {
-  color: #333;
-}
-.contentwrap .section-2 .section2book .section2textbox h5:nth-of-type(2) span {
-  color: #333;
   font-size: 12px;
 }
 .contentwrap .section-2 .section2book .section2textbox h5:nth-of-type(2):hover {
@@ -1198,6 +1221,7 @@ header .headerslide img {
   border-right: 1px solid #d8d8d8;
   border-bottom: 1px solid #d8d8d8;
   overflow: hidden;
+  cursor: pointer;
 }
 .contentwrap .section-5 h4 {
   position: absolute;
@@ -1558,7 +1582,7 @@ header .headerslide img {
   height: 38px;
   letter-spacing: -5px;
   background-image: url(/img/icon.png);
-  rotate: -180deg;
+  transform: rotate(180deg);
   position: absolute;
   top: 17px;
   cursor: pointer;
